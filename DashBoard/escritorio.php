@@ -44,7 +44,7 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>5</h3>
-
+           
                 <p>Habitaciones Disponibles</p>
               </div>
               <div class="icon">

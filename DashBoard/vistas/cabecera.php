@@ -24,8 +24,8 @@ if($_SESSION["s_usuario"] === null){
   <!-- Theme style -->
   <link rel="stylesheet" href="/assets/css/adminlte.min.css">
 
+  <link href="assets/css/styles.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https:/cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/estilo.css"> 
   <link rel="stylesheet" type="text/css" href="https:/cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
 
 <!-- Recargar DataTable -->
@@ -45,9 +45,9 @@ if($_SESSION["s_usuario"] === null){
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background: #11B3EB;">
-    <!-- Left navbar links -->
+  <!-- Navbar 
+    Otro color de fondo más claro:   class="main-header navbar navbar-expand navbar-white navbar-light"-->
+  <nav class="main-header navbar navbar-expand navbar-dark bg-dark">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -79,95 +79,7 @@ if($_SESSION["s_usuario"] === null){
           </form>
         </div>
       </li>
-
-      <!-- Messages Dropdown Menu 
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start 
-            <div class="media">
-              <img src="/assets/img/3.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End 
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start 
-            <div class="media">
-              <img src="/assets/img/4.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End 
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start 
-            <div class="media">
-              <img src="/assets/img/5.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End 
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu 
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      -->
-
+    <!-- Menú parte superior-->
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
@@ -184,11 +96,11 @@ if($_SESSION["s_usuario"] === null){
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
           <a class="dropdown-item" href="#">
             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            Profile
+            Perfil
           </a>
           <a class="dropdown-item" href="#">
             <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-            Settings
+            Ajustes
           </a>
           <a class="dropdown-item" href="#">
             <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -204,12 +116,12 @@ if($_SESSION["s_usuario"] === null){
     </ul>
   </nav>
   <!-- /.navbar -->
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar elevation-4" style="background: #03435A;">
+  <!-- Menú parte izquierdo // cambiar color de fondo style="background: #03435A;"-->
+  <aside class="main-sidebar elevation-4 bg-dark">
     <!-- Brand Logo -->
-    <a class="brand-link" style="margin:40px 10px 20px 10px"> 
+    <a class="brand-link ps-3" style="margin:20px 5px 5px 10px"> 
       <img src="/assets/img/sipan.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .9">
-      <span class="brand-text font-weight-light" style="color:white; font-family:Lucida Bright; text-shadow: 0px 0px 3px
+      <span class="brand-text font-weight-light" style="font-family:helvetica; text-shadow: 0px 0px 3px
             ;">SIPAN</span>
     </a>
     <!-- Sidebar -->
@@ -229,6 +141,7 @@ if($_SESSION["s_usuario"] === null){
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item" >
+          <div class="sb-sidenav-menu-heading">INICIO</div>
             <a href="escritorio.php" class="nav-link" >
               <i class="nav-icon fas fa-chalkboard"></i>
               <p>
