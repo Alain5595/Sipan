@@ -1,0 +1,12 @@
+.content-wrapper{
+  width:auto;
+  background: #FFFFFF;
+  padding: 0px;
+  margin-left:auto;
+  margin-top: 2px;
+  border-radius: 3px;
+  font-family: 'calibri';
+  color: black;
+  box-shadow: 1px 1px 1px 1px #000;
+
+}
