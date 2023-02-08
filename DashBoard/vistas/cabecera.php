@@ -25,8 +25,17 @@ if($_SESSION["s_usuario"] === null){
   <link rel="stylesheet" href="/assets/css/adminlte.min.css">
 
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <link href="assets/css/estilo01.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https:/cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
   <link rel="stylesheet" type="text/css" href="https:/cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+  <!-- PRUEBAAAAAAAAAAAAAAAA -->
+   <!-- Google Font: Source Sans Pro -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+ 
+  <!-- Ionicons -->
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
 
 <!-- Recargar DataTable -->
 <script type="text/javascript">
@@ -119,10 +128,9 @@ if($_SESSION["s_usuario"] === null){
   <!-- Menú parte izquierdo // cambiar color de fondo style="background: #03435A;"-->
   <aside class="main-sidebar elevation-4 bg-dark">
     <!-- Brand Logo -->
-    <a class="brand-link ps-3" style="margin:20px 5px 5px 10px"> 
+    <a class="brand-link ps-3" style="margin:10px 1px 1px 2px"> 
       <img src="/assets/img/sipan.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .9">
-      <span class="brand-text font-weight-light" style="font-family:helvetica; text-shadow: 0px 0px 3px
-            ;">SIPAN</span>
+      <span class="brand-text " style="font-family:helvetica; text-shadow: 0px 0px 3px;">SIPAN</span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -136,137 +144,138 @@ if($_SESSION["s_usuario"] === null){
         </div>
       </div> -->
       <!-- Sidebar Menu -->
-      <nav class="mt-2" style="margin:5px;">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" >
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item" >
-          <div class="sb-sidenav-menu-heading">INICIO</div>
-            <a href="escritorio.php" class="nav-link" >
-              <i class="nav-icon fas fa-chalkboard"></i>
-              <p>
-                Escritorio
-              </p>
-            </a>       
-          </li>
-          <li class="nav-item">
-            <a href="huespedes.php" class="nav-link">
-              <i class="nav-icon  fas fa-users"></i>
-              <p>
-                Huespedes
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="configuracion.php" class="nav-link ">
-                  <i class="fas 	fas fa-user-plus"></i>
-                  <p>Recepcion</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="servicio.php" class="nav-link">
-                  <i class="fas 	fas fa-user-minus"></i>
-                  <p>Salida</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>       
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-hotel"></i>
-              <p>
-                Hostal
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="configuracion.php" class="nav-link ">
-                  <i class="fas fa-cog nav-icon"></i>
-                  <p>Configuración</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="servicio.php" class="nav-link">
-                  <i class="fas fa-praying-hands nav-icon"></i>
-                  <p>Servicios</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="personal.php" class="nav-link">
-                  <i class="fas fa-pump-medical nav-icon"></i>
-                  <p>Personal</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="home.perm.php" class="nav-link">
-                  <i class="fas fa-hands-helping nav-icon"></i>
-                  <p>Permiso</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="diagnostico.php" class="nav-link">
-                  <i class="  fas fa-bed nav-icon"></i>
-                  <p>Reserva</p>
-                </a>                
-              </li>
-            </ul>
-          </li>
-          <!-- Boton desplegble
-          <div class="desplegable">
-            <button class="boton" id="des">Clinica</button>
-            <div class="links">
-              <a href="#">Lin1</a>
-              <a href="#">Lin2</a>
-              <a href="#">Lin3</a>
-            </div>
-          </div>
-          -->
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-comments"></i>
-              <p>Consultas<i class="right fas fa-angle-left"></i></p>
-            </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item mr-3">
-              <a href="#" class="nav-link">
-                <i class="fas fa-dollar-sign nav-icon"></i>
-                <p>Pagos</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="historias.php" class="nav-link">
-                <i class="fas fa-book-medical nav-icon"></i>
-                <p>Email</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="contactos.php" class="nav-link">
-                <i class="fas fa-address-book nav-icon"></i>
-                <p>Contactos</p>
-              </a>
-            </li>
-          </ul>
-          </li>  
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-plus-circle"></i>
-              <p>Ayuda</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-question-circle"></i>
-              <p>Acerca De...</p>
-            </a>
-          </li>                   
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
+      
+      <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+          <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+              <div class="nav">
+                <div class="sb-sidenav-menu-heading">INICIO</div>
+                  <a class="nav-link" href="escritorio.php">
+                      <div class="sb-nav-link-icon"><i class="fas fa-chalkboard"></i></div>
+                      Escritorio
+                  </a>
+                <div class="sb-sidenav-menu-heading">Interface</div>
+                  
+                  <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="far fa-edit"></i></div>
+                    Gestionar
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>  
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                  <nav class="sb-sidenav-menu-nested nav">
+
+                    <a class="nav-link" href="ingreso.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                        Ingreso
+                    </a>
+                    <a class="nav-link" href="salida.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-minus"></i></div>
+                        Salida
+                    </a>
+
+                  </nav>
+                </div>
+                
+                  <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                    Hostal
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>
+                  <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                  <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                    
+                  <a class="nav-link" href="#">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                        Configuracion
+                    </a>
+                    <a class="nav-link" href="escritorio.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-minus"></i></div>
+                        Servicios
+                    </a>
+                  </nav>
+                  
+                </div>
+                 <a class="nav-link" href="escritorio.php">
+                      <div class="sb-nav-link-icon"><i class="far fa-address-card"></i></div>
+                      Clientes
+                  </a>
+                  
+                  <a class="nav-link" href="escritorio.php">
+                      <div class="sb-nav-link-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                      usuario
+                  </a>
+                  
+
+                <div class="sb-sidenav-menu-heading">Complementos</div>
+                  
+                  <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                    <div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
+                    Tienda
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>  
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                  <nav class="sb-sidenav-menu-nested nav">
+
+                    <a class="nav-link" href="#">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                        vender
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-minus"></i></div>
+                        Productos
+                    </a>
+
+                  </nav>
+                </div>
+
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="	far fa-bell"></i></div>
+                    Reportes
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>  
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                  <nav class="sb-sidenav-menu-nested nav">
+
+                    <a class="nav-link" href="tab.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                        Ingreso
+                    </a>
+                    <a class="nav-link" href="escritorio.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-minus"></i></div>
+                        Salida
+                    </a>
+
+                  </nav>
+                </div>
+
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="	fas fa-cogs"></i></div>
+                    Mantenimiento
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>  
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                  <nav class="sb-sidenav-menu-nested nav">
+
+                    <a class="nav-link" href="tab.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                        Ingreso
+                    </a>
+                    <a class="nav-link" href="escritorio.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-minus"></i></div>
+                        Salida
+                    </a>
+
+                  </nav>
+                </div>
+
+                <!--- fin -->
+                </div>
+
+              </div>
+            </div> 
+          </nav>
+        </div>
+      </div>
     <!-- /.sidebar -->
   </aside>

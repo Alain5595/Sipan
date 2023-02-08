@@ -22,8 +22,8 @@
         <!-- Small boxes (Stat box) -->
         <ol class="breadcrumb"><li class="breadcrumb-item text-success">Habitaciones</li></ol>
 
-        <div class="row">  
-          <div class="col-lg-3 col-6">
+        <div class="form-row">  
+          <div class="col-lg-3 col-md-6">
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
@@ -33,13 +33,13 @@
               </div>
 
               <div class="icon">
-                <i class="ion ion-bag"></i>
+                <i class="ion ion-clipboard"></i>
               </div>
               <a href="#" class="small-box-footer">Mas info <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-3 col-md-6">
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
@@ -48,13 +48,13 @@
                 <p>Habitaciones Disponibles</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="ion ion-happy"></i>
               </div>
               <a href="#" class="small-box-footer">Mas info <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-3 col-md-6">
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
@@ -63,13 +63,13 @@
                 <p>Habitaciones ocupadas</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="ion ion-alert"></i>
               </div>
               <a href="#" class="small-box-footer">Mas info <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-3 col-md-6">
             <!-- small box -->
             <div class="small-box bg-secondary">
               <div class="inner">
@@ -78,7 +78,7 @@
                 <p>Habitaciones en Limpieza</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="ion ion-leaf"></i>
               </div>
               <a href="#" class="small-box-footer">Mas info <i class="fas fa-angle-right"></i></a>
             </div>
@@ -286,9 +286,6 @@
       </div>    
     </section>
   </div>
-</body>
 
-
-</html>
 <?php include("vistas/pie.php"); ?>   
           

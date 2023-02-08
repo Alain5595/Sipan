@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="main.css">
+
+    
+    
+    <title>Hospedaje Sipan</title>
+  </head>
+  <body>
+    <!--CABEZERA-->
+        <header class="header" id="header">
+            <div class="head-top">
+                <div class="site-name">
+                    <span>HOSPEDAJE SIPAN</span>
+                </div>
+                <div class="site-nav">
+                  <span id="nav-btn">MENU<i class ="fas fa-bars"></i></span>
+                </div>
+            </div>
+            
+            <div class="head-bottom flex">
+                <h2>Bienvenido</h2>
+                
+                <p>Te ofrecemos el mejor trato y comodidad. <br>
+                Trabajamos con criterio de higiene y orden impecable
+                </p>
+                
+                <button type="button" class="head-btn" >Seguir</button>
+              </div>
+
+              <ul class="home-social-list">
+                <li>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                </li>
+                
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="	fab fa-telegram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+            </ul>
+            <!-- end home-social-list -->
+    
+            <div class="home-scrolldown">
+                <a href="#about" class="scroll-icon smoothscroll">
+                    <span>Scroll Down</span>
+                    <i class="fa-thin fa-arrow-down" arian-hidden="true"></i>
+                </a>
+            </div>
+
+        </header>
+    <!--Finaliza cabezera-->
+
+    <!-- Comienzo Navbar-->
+        <div class="sidenav" id="sidenav">
+          <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+          </span>
+
+          <ul class="navbar">
+            <li><a href="#header" title="Inicio">Inicio</a></li>
+            <li><a href="#services" title="Servicio">Servicio</a></li>
+            <li><a href="#rooms" title="habitaciones">Habitaciones</a></li>
+            <li><a href="#customers" title="clientes">Clientes</a></li>
+          </ul>
+          
+          <button class="btn sign-up">Inscribirse</button>
+          <button class="btn log-in">Acceso</button>
+        </div>    
+
+    <!-- Fin  Navbar-->
+
+    <!--Button Modal-->
+        <div id="modal"></div>
+    
+      <!--Inicio del BODY-->
+        <section class="services sec-width" id="services">
+          <div class="title">
+            <h2>Servicios</h2>
+          </div>          
+          <div class="services-container">
+            <!--servicio único-->
+            <article class="service">
+              <div class="service-icon">
+                <span>
+                  <i class="fas fa-utensils"></i>
+                </span>
+              </div>
+              <div class="service-content">
+                <h2>Servicio de comida/ Corredor de comidas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fuga exercitationem sapiente aspernatur repellendus quidem suscipit facere repudiandae dolor rem odio, sed aperiam, ipsa nobis soluta explicabo ad, assumenda ratione quasi unde provident inventore possimus autem itaque? Hic nihil laudantium facere quas ullam numquam molestiae, reiciendis eligendi porro, in deleniti.</p>
+                <button type="button" class="btn">saber más</button>
+              </div>
+            </article>
+            <!--servicio único-->
+            <article class="service">
+              <div class="service-icon">
+                <span>
+                  <i class="fas fa-broom"></i>
+                </span>
+              </div>
+              <div class="service-content">
+                <h2>limpieza interna</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fuga exercitationem sapiente aspernatur repellendus quidem suscipit facere repudiandae dolor rem odio, sed aperiam, ipsa nobis soluta explicabo ad, assumenda ratione quasi unde provident inventore possimus autem itaque? Hic nihil laudantium facere quas ullam numquam molestiae, reiciendis eligendi porro, in deleniti.</p>
+                <button type="button" class="btn">saber más</button>
+              </div>
+            </article>
+             <!--servicio único-->
+             <article class="service">
+              <div class="service-icon">
+                <span>
+                  <i class="fas fa-door-closed"></i>
+                </span>
+              </div>
+              <div class="service-content">
+                <h2>limpieza interna</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fuga exercitationem sapiente aspernatur repellendus quidem suscipit facere repudiandae dolor rem odio, sed aperiam, ipsa nobis soluta explicabo ad, assumenda ratione quasi unde provident inventore possimus autem itaque? Hic nihil laudantium facere quas ullam numquam molestiae, reiciendis eligendi porro, in deleniti.</p>
+                <button type="button" class="btn">saber más</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="book">
+          <form class="book-form">
+            <div class="form-item">
+              <label for="checkin date">Elegir fecha</label>
+              <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+              <label for="checkout date">Finalizar fecha</label>
+              <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+              <label for="adult">Adults:</label>
+              <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+              <label for="children">Niños:</label>
+              <input type="number" min="1" value="1" id="cjildren">
+            </div>
+            <div class="form-item">
+              <label for="room">Habitaciones:</label>
+              <input type="number" min="1" value="1" id="rom">
+            </div>
+            <div class="form-item">
+             
+              <input type="submit" class="btn" value="Reservar">
+            </div>
+          </form>
+        </div>
+      
+        <section class="rooms sec-width" id="rooms">
+          <div class="title">
+            <h2>Habitaciones</h2>
+          </div>
+          <div class="rooms-container">
+            <article class="room">
+              <div class="room-image">
+                <img src="img/cam1.jpg" alt="room image">
+              </div>
+              <div class="room-text">
+                <h3>Habitaciones Individuales</h3>
+                <h4>Incluye:</h4>
+                <ul>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Baño 
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    TV 4K
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Wifi 
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Netflix
+                  </li>
+                </ul>
+                <p>Disfruta de estas cálidas, elegantes y luminosas estancias. Ponemos a disposición 24 amplias habitaciones clásicas</p>
+                <p>Vista a la Universidad Sipan. Cercanía a la playa(aproximadamente a unos 10 min.).</p>
+                <p>Descubre uno de los paisajes más espetaculares de Perú.</p>
+                <p class="rate">
+                  <span>S/50.00 /</span> Por noche
+                </p>
+                <button type="button" class="btn">Saber más</button>
+              </div>
+            </article>
+
+            <article class="room">
+              <div class="room-image">
+                <img src="img/pasillo1.jpg" alt="room image">
+              </div>
+              <div class="room-text">
+                <h3>Habitaciones de Lujo</h3>
+                <ul>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsam unde quae delectus est, qui eum rem temporibus, similique voluptatum dicta accusantium dolores hic praesentium reprehenderit culpa? Est, odit sapiente!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vel rem nihil molestiae nulla sunt modi nemo dignissimos sed, necessitatibus consequuntur iusto culpa libero commodi nobis atque a exercitationem harum.</p>
+                <p class="rate">
+                  <span>S/50.00 /</span> Por noche
+                </p>
+                <button type="button" class="btn">Saber más</button>
+              </div>
+            </article>
+
+            <article class="room">
+              <div class="room-image">
+                <img src="img/pasillo2.jpeg" alt="room image">
+              </div>
+              <div class="room-text">
+                <h3>Habitaciones de Lujo</h3>
+                <ul>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                  <li>
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    Lorem ipsum dolor
+                  </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsam unde quae delectus est, qui eum rem temporibus, similique voluptatum dicta accusantium dolores hic praesentium reprehenderit culpa? Est, odit sapiente!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vel rem nihil molestiae nulla sunt modi nemo dignissimos sed, necessitatibus consequuntur iusto culpa libero commodi nobis atque a exercitationem harum.</p>
+                <p class="rate">
+                  <span>S/50.00 /</span> Por noche
+                </p>
+                <button type="button" class="btn">Saber más</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="customers" id="customers">
+          <div class="sec-width">
+            <div class="title">
+              <h2>Clientes</h2>
+            </div>
+            <div class="customers-container">
+              <div class="customer">
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>nos encantó</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel sit eligendi dicta alias officia? Officiis inventore fugit qui tenetur sit consequatur, iste quam perspiciatis assumenda alias perferendis totam! Cum!</p>
+                <img src="img/cust1.jpg" alt="imagen de clientes">
+                <span>Lorena</span>
+              </div>
+
+              <div class="customer">
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>nos encantó</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ex magnam corrupti alias voluptatibus harum neque suscipit mollitia nesciunt quo?</p>
+                <img src="img/cust2.jpg" alt="imagen de clientes">
+                <span>Mercedes Sosa</span>
+              </div>
+
+              <div class="customer">
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>nos encantó</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, hic.</p>
+                <img src="img/cust3.jpg" alt="imagen de clientes">
+                <span>Selene y Fabian</span>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- FIN BODY-->
+
+        <!--PIE DE PAGINA-->
+        <footer class="footer">
+          <div class="footer-container">
+            <div>
+              <h2>Sobre nosotros</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, temporibus?</p>
+              <ul class="social-icons">
+                <li class="flex">
+                  <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp fa-2x"></i></a>
+                </li>
+                <li class="flex">
+                  <a href="https://www.facebook.com/profile.php?id=100090130470567"><i class="fa fa-facebook fa-2x"></i></a>
+                </li>
+                <li class="flex">
+                  <a href="https://www.instagram.com/hospedajesipan/"><i class="fa fa-instagram fa-2x"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Enlaces Utiles</h2>
+                <a href="#">Blog</a>
+                <a href="#">Habitaciones</a>
+                <a href="#">subcripción</a>
+                <a href="#">Gift Card</a>
+            </div>
+            <div>
+              <h2>Privacidad</h2>
+                <a href="#">Calle</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contactos</a>
+                <a href="#">Servicios</a>
+            </div>
+            <div>
+              <h2>Tengo una Pregunta</h2>
+              <div class="contact-item">
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span>
+                  Av.Pacífico Oeste 418, Pimentel - Chiclayo
+                </span>
+              </div>
+              <div class="contact-item">
+                <span>
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span>
+                  (+51) 973190205
+                </span>
+              </div>
+              <div class="contact-item">
+                <span>
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span>
+                  sipanhospeda@gmail.com
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!--font aweason-->
+    <script src="https://kit.fontawesome.com/44ad6048bd.js" crossorigin="anonymous"></script>
+    
+    <!--java scrip-->
+    <script src="script.js"></script>
+
+
+  </body>
+</html>

@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\v1\ClientesController;
+use App\Http\Controllers\v1\PersonasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 */
 
-Route::get('/v1/clientes' ,[ClientesController::class, 'getAll']);
-Route::get('/v1/clientes/{id}',[ClientesController::class, 'getItem']);
-Route::post('/v1/clientes',[ClientesController::class, 'store']);
-Route::put('/v1/clientes',[ClientesController::class, 'putUpdate']);
-Route::patch('/v1/clientes',[ClientesController::class, 'patchUpdate']);
-Route::delete('/v1/clientes/{id}',[ClientesController::class, 'delete']);
+Route::get('/v1/personas' ,[PersonasController::class, 'getAll']);
+Route::get('/v1/personas/{id}',[PersonasController::class, 'getItem']);
+Route::post('/v1/personas',[PersonasController::class, 'store']);
+Route::put('/v1/personas',[PersonasController::class, 'putUpdate']);
+Route::patch('/v1/personas',[PersonasController::class, 'patchUpdate']);
+Route::delete('/v1/personas/{id}',[PersonasController::class, 'delete']);

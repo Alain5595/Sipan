@@ -16,32 +16,30 @@
     
     <body>
      
-      <div class="container-login">
-        <div class="wrap-login"> 
-            <form class="login-form validate-form" id="formLogin" action="" method="post">
-                <span class="login-form-title">LOGIN</span>      
-                <div class="wrap-input100" data-validate = "Usuario incorrecto">
-                    <input class="input100" autocomplete="off" type="text" id="usuario" name="usuario" placeholder="Usuario">
-                    <span class="focus-efecto"></span>
-                </div>
-                
-                <div class="wrap-input100" autocomplete="off" data-validate="Password incorrecto">
-                    <input class="input100" type="password" id="password" name="password" placeholder="Contraseña">
-                    <span class="focus-efecto"></span>
-                </div>
-                
-                <div class="container-login-form-btn">
-                    <div class="wrap-login-form-btn">
-                        <div class="login-form-bgbtn"></div>
-
-                        <button type="submit" name="submit" class="login-form-btn">INGRESAR</button>
+        <div class="container-login">
+            <div class="wrap-login"> 
+                <form class="login-form validate-form" id="formLogin" action="" method="post">
+                    <span class="login-form-title">LOGIN</span>      
+                    <div class="wrap-input100" data-validate = "Usuario incorrecto">
+                        <input class="input100" autocomplete="off" type="text" id="usuario" name="usuario" placeholder="Usuario">
+                        <span class="focus-efecto"></span>
                     </div>
-                </div>
-               
-                                
-            </form>
-        </div>
-    </div>     
+                    
+                    <div class="wrap-input100" autocomplete="off" data-validate="Password incorrecto">
+                        <input class="input100" type="password" id="password" name="password" placeholder="Contraseña">
+                        <span class="focus-efecto"></span>
+                    </div>
+                    
+                    <div class="container-login-form-btn">
+                        <div class="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+
+                            <button type="submit" name="submit" class="login-form-btn">INGRESAR</button>
+                        </div>
+                    </div>               
+                </form>
+            </div>
+        </div>     
         
         
      <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>    
